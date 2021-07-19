@@ -1,0 +1,11 @@
+1.Clone(download repository) to current directory (.)
+    git clone <ssh link> . 
+2. Check files status (Updates, new files, deleted files)
+    git status
+3. Create new branch and change to it 
+    git checkout -b <branch name>
+4. Stage files for commit(Track them)
+    git add <files or directory>
+    git add .   - add all contents of current directory
+5. Commit file to repository
+    git commit -m "<commit message>"
