@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login validation</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script defer src="ValidationScript.js"></script>
+  </head>
+
+  <body>
+    <h1>Log in:</h1>
+    <div id="error"></div>
+    <form id="form" action="insertUser.php" method="post">
+      <div>
+        <label for="name">Username:</label>
+        <input type="text" name="name" id="name" />
+      </div>
+
+      <div>
+        <label for="password">Password*:</label>
+        <input id="password" type="password" name="surname" />
+        <p class="pass">
+          Password must be between 6 and 20 characters long, must contain
+          Capital letter, number and special symbol
+        </p>
+      </div>
+      <input class="button" type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
